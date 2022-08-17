@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Product Search">
+    <listeners>
+        <listener class-name="Reporter.TestListener"/>
+    </listeners>
+    <test name="Amazon Application Filter and Sort Test">
+        <classes>
+            <class name="testClasses.tests.AmazonTests">
+                <methods>
+                    <include name="verifyFilterAndSort">
+                        <parameter name="menuItem" value="TV, Appliances, Electronics"/>
+                        <parameter name="subMenuItem" value="Televisions"/>
+                        <parameter name="filterType" value="Brands"/>
+                        <parameter name="filterValue" value="Samsung"/>
+                        <parameter name="sortByValue" value="Price: High to Low"/>
+                        <parameter name="itemIndex" value="2"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Amazon Application Filter and Sort Test1">
+        <classes>
+            <class name="testClasses.tests.AmazonTests">
+                <methods>
+                    <include name="verifyFilterAndSort2">
+                        <parameter name="menuItem" value="TV, Appliances, Electronics"/>
+                        <parameter name="subMenuItem" value="Televisions"/>
+                        <parameter name="filterType" value="Brands"/>
+                        <parameter name="filterValue" value="Samsung"/>
+                        <parameter name="sortByValue" value="Price: High to Low"/>
+                        <parameter name="itemIndex" value="2"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Amazon Application Filter and Sort Test3">
+        <classes>
+            <class name="testClasses.tests.AmazonTests">
+                <methods>
+                    <include name="verifyFilterAndSort">
+                        <parameter name="menuItem" value="TV, Appliances, Electronics"/>
+                        <parameter name="subMenuItem" value="Televisions"/>
+                        <parameter name="filterType" value="Brands"/>
+                        <parameter name="filterValue" value="Samsung"/>
+                        <parameter name="sortByValue" value="Price: High to Low"/>
+                        <parameter name="itemIndex" value="2"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
